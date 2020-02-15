@@ -4,7 +4,9 @@
 [![Build Status](https://travis-ci.org/jaebradley/object-property.svg?branch=master)](https://travis-ci.org/jaebradley/object-property)
 [![codecov](https://codecov.io/gh/jaebradley/object-property/branch/master/graph/badge.svg)](https://codecov.io/gh/jaebradley/object-property)
 [![npm](https://img.shields.io/npm/v/object-property.svg)](https://www.npmjs.com/package/object-property)
-[![npm](https://img.shields.io/npm/dt/object-property.svg)](https://www.npmjs.com/package/object-property)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/object-property)
+[![npm-total-downloads](https://img.shields.io/npm/dt/object-property.svg)](https://www.npmjs.com/package/object-property)
+![GitHub](https://img.shields.io/github/license/jaebradley/object-property)
 
 Instead of doing
 

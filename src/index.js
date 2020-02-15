@@ -43,25 +43,25 @@ const find = ({ object, properties }) => {
 };
 
 const get = (...properties) => {
-  const from = object => find({ object, properties });
+  const from = (object) => find({ object, properties });
   return { from };
 };
 
 const exists = (properties) => {
-  const check = object => typeof get(properties).from(object) !== 'undefined';
+  const check = (object) => typeof get(properties).from(object) !== 'undefined';
   return { in: check };
 };
 
 
 const set = (...properties) => {
-  const setObject = object => ({
-    to: replacement => setOrDeleteProperties({ object, properties, replacement }),
+  const setObject = (object) => ({
+    to: (replacement) => setOrDeleteProperties({ object, properties, replacement }),
   });
   return { in: setObject };
 };
 
 const remove = (...properties) => {
-  const from = object => setOrDeleteProperties({ object, properties });
+  const from = (object) => setOrDeleteProperties({ object, properties });
   return { from };
 };
 

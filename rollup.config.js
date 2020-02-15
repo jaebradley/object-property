@@ -1,11 +1,10 @@
 import babel from 'rollup-plugin-babel';
-import commonjs from 'rollup-plugin-commonjs';
-import resolve from 'rollup-plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
 import localResolve from 'rollup-plugin-local-resolve';
 import filesize from 'rollup-plugin-filesize';
 import globals from 'rollup-plugin-node-globals';
 import builtins from 'rollup-plugin-node-builtins';
-import { terser } from 'rollup-plugin-terser';
 
 const config = {
   input: 'src/index.js',
@@ -38,7 +37,6 @@ const config = {
       browser: true,
       modulesOnly: true,
     }),
-    terser(),
     commonjs(),
     filesize(),
   ],
